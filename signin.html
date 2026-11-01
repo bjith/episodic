@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Boldonse&display=swap" rel="stylesheet">
+</head>
+
+<body class="body_sign">
+
+    <main class="main_sign">
+        <img src="./assets/landing.png" class="landing">
+    </main>
+
+    <div class="header_sign">
+
+        <header class="w-full max-w-[1000px] mx-auto">
+
+            <div class="flex justify-around items-center p-5">
+
+                <h1 class="logo">
+                    SERIES<span class="hub">HUB</span>
+                    <img src="./assets/logoproject.png" class="w-15">
+                </h1>
+
+                <a href="./index.html" class="home">HOME</a>
+                <a href="./signin.html" class="signin active">SIGN IN</a>
+                <a href="./discover.html" class="discover">EXPLORE</a>
+
+                <a href="./profile.html" class="profile">
+                    <i class="fa-regular fa-circle-user mr-2 text-lg items-center"></i>PROFILE
+                </a>
+
+            </div>
+
+        </header>
+
+    </div>
+
+
+    <div class="signin_box">
+
+        <form id="signinForm" method="get" class="mt-15 pl-30">
+
+            <label for="email" class="signin_label">
+                Enter your Email address
+            </label><br>
+
+            <input
+                type="email"
+                id="email"
+                class="signin_input"
+                name="email"
+                placeholder="Eg:user12@gmail.com"
+                required
+            ><br>
+
+
+            <label for="password" class="signin_label">
+                Enter your Password
+            </label><br>
+
+            <input
+                type="password"
+                id="password"
+                class="signin_input"
+                name="password"
+                placeholder="Enter your password"
+                required
+            ><br>
+
+
+            <button type="submit" id="login_submit">
+                Sign In
+            </button>
+
+            <p class="text-white mt-5 mx-30 my-40">
+                Don't have an account?
+                <a href="./signup.html" class="text-red-400">Sign Up</a>
+            </p>
+
+        </form>
+
+    </div>
+
+
+    <script src="./signin.js"></script>
+
+</body>
+</html>
+```

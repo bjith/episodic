@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Boldonse&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+  <div id="home_header">
+   <div class="header" >
+
+   <header class="w-full max-w-[1200px] mx-auto" >
+        
+        <div class="flex  justify-around  items-center p-5">
+          <h1  class="logo">SERIES<span class="hub">HUB</span>  <img src="./assets/logoproject.png"class="w-15"></h1>
+            
+            <a href="./index.html" class="home active">HOME</a>
+            <a href="./signin.html" class="signin">SIGN IN</a>
+            <a href="./discover.html" class="discover">EXPLORE</a>
+            <a href="./profile.html" class="profile"><i class="fa-regular fa-circle-user mr-2 text-lg items-center"></i>PROFILE</a>
+            
+        </div>
+       
+    </header>
+     </div>   
+     </div>
+     
+
+     <main class="main_home">
+        <img src="./assets/home.png" class="home_img">
+
+        <div class="w-full max-w-[1200px] mx-auto home_page " id="gfs">
+          <div class="flex gap-[70px] items-center justify-center m-9">
+          <div class="genre">
+
+            <label for="genre">Genre :</label>
+            <select id="genres" class="bg_select">
+                <option value="all">All</option>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="comedy">Comedy</option>
+                <option value="crime">Crime</option>
+                <option value="drama">Drama</option>
+                 <option value="family">Family</option>
+                 <option value="fantasy">Fantasy</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+                <option value="sports">Sports</option>
+                <option value="science-fiction">Science-Fiction</option>
+                <option value="thriller">Thriller</option>
+            </select>
+
+          </div>
+
+
+          <div class="filter">
+
+            <label for="filter">Sort By :</label>
+            <select id="sorting"  class="bg_select">
+              <option value="none">None</option>
+              <option value="rating-higher">Highest Rating</option>
+              <option value="rating-lower">Lowest Rating</option>
+              <option value="latest">Latest </option>
+              <option value="oldest"> Oldest</option>
+            </select>
+
+
+          </div>
+
+          <div class="type">
+
+            <label for="type">Type :</label>
+
+            <select id="type" class="bg_select">
+              <option value="all">All</option>
+              <option value="Scripted">Scripted</option>
+              <option value="Animation">Animated</option>
+               <option value="Reality">Reality</option>
+               <option value="Documentary">Documentry</option>
+
+            </select>
+
+          </div>
+
+          </div>
+
+
+
+            <div id="mv" class="home_mv">
+
+            </div>
+
+         
+
+        </div>
+
+        <div id="details" class="w-full max-w-[1200px] mx-auto">
+          
+          
+        </div>
+       
+        <button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+     </main>
+
+
+    <script src="./filter.js"></script>
+</body>
+</html>
