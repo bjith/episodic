@@ -5,9 +5,13 @@ const sort_select=document.getElementById("sorting")
 const type_select=document.getElementById("type")
 let seriesData=[]
 
+const footer = document.querySelector(".footer");
+
+
 const backToTop=document.getElementById("backToTop")
 window.addEventListener("scroll",()=>{
-    if(scrollY>1500){
+    const footerPosition = footer.getBoundingClientRect().top;
+    if(scrollY>1500 && footerPosition>window.innerHeight){
         backToTop.style.display="flex"
     }
     else{
