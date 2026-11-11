@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,30 +22,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Boldonse&display=swap" rel="stylesheet">
 </head>
 
-<body class="body_sign">
+<body class="overflow-y-hidden ">
 
     <main class="main_sign">
         <img src="./assets/landing.png" class="landing">
-    </main>
+    
 
     <div class="header_sign">
 
         <header class="w-full max-w-[1000px] mx-auto">
 
-            <div class="flex justify-around items-center p-5">
+            <div class="flex flex-col sm:flex-row  justify-around  items-center p-5">
 
                 <h1 class="logo">
-                    SERIES<span class="hub">HUB</span>
+                    EPI<span class="hub">SODIC</span>
                     <img src="./assets/logoproject.png" class="w-15">
                 </h1>
 
-                <a href="./index.html" class="home">HOME</a>
+                <div class="flex items-center gap-7 mt-7 md:mt-0 md:gap-10">
+                    <a href="./index.html" class="home">HOME</a>
                 <a href="./signin.html" class="signin active">SIGN IN</a>
                 <a href="./discover.html" class="discover">EXPLORE</a>
 
                 <a href="./profile.html" class="profile">
                     <i class="fa-regular fa-circle-user mr-2 text-lg items-center"></i>PROFILE
                 </a>
+                </div>
 
             </div>
 
@@ -54,9 +56,9 @@
     </div>
 
 
-    <div class="signin_box">
+    <div class="signin_box ">
 
-        <form id="signinForm" method="get" class="mt-15 pl-30">
+        <form id="signinForm"  method="get" class="mt-15 pl-30">
 
             <label for="email" class="signin_label">
                 Enter your Email address
@@ -85,12 +87,14 @@
                 required
             ><br>
 
+            
+
 
             <button type="submit" id="login_submit">
                 Sign In
             </button>
 
-            <p class="text-white mt-5 mx-30 my-40">
+            <p class="text-white mt-5 mx-30 my-40 min-w-40">
                 Don't have an account?
                 <a href="./signup.html" class="text-red-400">Sign Up</a>
             </p>
@@ -98,10 +102,12 @@
         </form>
 
     </div>
+    </main>
+
+    
 
 
     <script src="./signin.js"></script>
 
 </body>
 </html>
-```

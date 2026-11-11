@@ -16,19 +16,21 @@
 
 
 </head>
-<body>
+<body >
   <div class="discover_bg " >
    <div class="header">
 
    <header class="w-full max-w-[1000px] mx-auto">
         
-        <div class="flex  justify-around  items-center p-5">
-          <h1  class="logo">SERIES<span class="hub">HUB</span>  <img src="./assets/logoproject.png"class="w-15"></h1>
-            
+        <div class="flex flex-col sm:flex-row  justify-around  items-center p-5">
+          <h1  class="logo">EPI<span class="hub">SODIC</span>  <img src="./assets/logoproject.png"class="w-15"></h1>
+            <div class="flex items-center gap-7 mt-7 md:mt-0 md:gap-10">
+              
             <a href="./index.html" class="home">HOME</a>
             <a href="./signin.html" class="signin">SIGN IN</a>
             <a href="./discover.html" class="discover active">EXPLORE</a>
             <a href="./profile.html" class="profile"><i class="fa-regular fa-circle-user mr-2 text-lg items-center"></i>PROFILE</a>
+            </div>
             
         </div>
        
@@ -45,13 +47,64 @@
 
 
     
-    <div id="mv" class="w-full max-w-[1200px]   mx-auto discover_mv">
+    <div id="mv" class="w-full max-w-[1200px]  mx-auto discover_mv grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-8 ">
 
        
         
 
     </div>
     </div>
+
+    <footer class="footer  w-full">
+
+   <div class="flex justify-between">
+     <div class="footer_top">
+
+        <h2 class="footer_logo">EPI<span  class="text-green-700"> SODIC</span></h2>
+
+        <p>Discover your next favourite series.</p>
+
+        <div class="footer_social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <p class="mt-4">For any suggestion contact on <i class="fa-solid fa-envelope"></i> : episodic@gmail.com</p>
+
+    </div>
+
+    <div class="footer_links  sm:ml-40">
+
+        <div>
+            <h3>Explore</h3>
+            <a href="./index.html">Home</a>
+            <a href="./discover.html">Discover</a>
+        </div>
+
+        <div class="relative right-4">
+            <div>
+            <h3>Account</h3>
+            <a href="./profile.html">My Profile</a>
+            <a href="./profile.html">Favourites</a>
+            <a href="./watchlist.html">Watchlist</a>
+        </div>
+
+        <div >
+            <a href="./signin.html">SignIn</a>
+            <a href="./signup.html">SignUp</a>
+        </div>
+        </div>
+
+    </div>
+
+   </div>
+    <div class="footer_bottom">
+        <p>© 2026 EpiSodic. All rights reserved.</p>
+    </div>
+
+</footer>
+
     <script src="./discover.js"></script>
 </body>
 </html>

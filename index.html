@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
@@ -16,19 +16,21 @@
 
 
 </head>
-<body>
+<body class="min-h-screen flex flex-col">
   <div id="home_header">
    <div class="header" >
 
-   <header class="w-full max-w-[1200px] mx-auto" >
+   <header class="w-full max-w-[1000px] mx-auto" >
         
-        <div class="flex  justify-around  items-center p-5">
-          <h1  class="logo">SERIES<span class="hub">HUB</span>  <img src="./assets/logoproject.png"class="w-15"></h1>
+        <div class="flex flex-col sm:flex-row  justify-around  items-center p-5">
+          <h1  class="logo">EPI<span class="hub">SODIC</span>  <img src="./assets/logoproject.png"class="w-15 "></h1>
             
-            <a href="./index.html" class="home active">HOME</a>
+            <div class="flex items-center gap-7 mt-7 md:mt-0 md:gap-10">
+                <a href="./index.html" class="home active">HOME</a>
             <a href="./signin.html" class="signin">SIGN IN</a>
             <a href="./discover.html" class="discover">EXPLORE</a>
-            <a href="./profile.html" class="profile"><i class="fa-regular fa-circle-user mr-2 text-lg items-center"></i>PROFILE</a>
+            <a href="./profile.html" class="profile"><i class="fa-regular fa-circle-user mr-2 text-lg items-center "></i>PROFILE</a>
+            </div>
             
         </div>
        
@@ -37,11 +39,13 @@
      </div>
      
 
-     <main class="main_home">
-        <img src="./assets/home.png" class="home_img">
+     <main class="main_home flex-1">
+        <img src="./assets/home.png" class="home_img ">
+        
 
         <div class="w-full max-w-[1200px] mx-auto home_page " id="gfs">
-          <div class="flex gap-[70px] items-center justify-center m-9">
+            <img src="./assets/cover.png" class="w-350 mt-10 hidden sm:block">
+          <div class="gst">
           <div class="genre">
 
             <label for="genre">Genre :</label>
@@ -97,7 +101,7 @@
 
 
 
-            <div id="mv" class="home_mv">
+            <div id="mv" class="home_mv grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 px-4">
 
             </div>
 
@@ -105,7 +109,7 @@
 
         </div>
 
-        <div id="details" class="w-full max-w-[1200px] mx-auto">
+        <div id="details" class="w-full max-w-[1200px] mx-auto mb-20">
           
           
         </div>
@@ -114,11 +118,12 @@
 
      </main>
      
-<footer class="footer">
+<footer class="footer w-full">
 
-    <div class="footer_top">
+   <div class="flex justify-between">
+     <div class="footer_top">
 
-        <h2 class="footer_logo">SERIES<span  class="text-green-700"> HUB</span></h2>
+        <h2 class="footer_logo">EPI<span  class="text-green-700"> SODIC</span></h2>
 
         <p>Discover your next favourite series.</p>
 
@@ -128,27 +133,37 @@
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </div>
 
+        <p class="mt-4">For any suggestion contact on <i class="fa-solid fa-envelope"></i> : episodic@gmail.com</p>
+
     </div>
 
-    <div class="footer_links">
+    <div class="footer_links sm:ml-40">
 
         <div>
             <h3>Explore</h3>
-            <a href="home.html">Home</a>
-            <a href="home.html">Discover</a>
+            <a href="./index.html">Home</a>
+            <a href="./discover.html">Discover</a>
         </div>
 
-        <div>
+        <div class="relative right-4">
+            <div>
             <h3>Account</h3>
-            <a href="profile.html">My Profile</a>
-            <a href="profile.html">Favourites</a>
-            <a href="watchlist.html">Watchlist</a>
+            <a href="./profile.html">My Profile</a>
+            <a href="./profile.html">Favourites</a>
+            <a href="./watchlist.html">Watchlist</a>
+        </div>
+
+        <div >
+            <a href="./signin.html">SignIn</a>
+            <a href="./signup.html">SignUp</a>
+        </div>
         </div>
 
     </div>
 
+   </div>
     <div class="footer_bottom">
-        <p>© 2026 SeriesHub. All rights reserved.</p>
+        <p>© 2026 EpiSodic. All rights reserved.</p>
     </div>
 
 </footer>
