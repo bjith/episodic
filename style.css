@@ -715,6 +715,16 @@
     margin-top: 30px;
 }
 
+
+@media (max-width:440px) {
+    .dets_style{
+        margin-top: 65px;
+    }
+    .ty_style{
+        margin-right: 6px;
+    }
+}
+
 .drating_style{
     display: flex;
     flex-direction: row-reverse;

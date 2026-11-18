@@ -10,6 +10,7 @@
     "module": "ESNext",
     "target": "ES2020",
     "types": [],
+    "moduleResolution" : "bundler",
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],

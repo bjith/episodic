@@ -304,7 +304,7 @@ sort_select.addEventListener("change", filterandSort);
 
 type_select.addEventListener("change", filterandSort);
 
-export function showDetails(id: number): void {
+ function showDetails(id: number): void {
 
     series.style.display = "none";
     gfs.style.display = "none";
@@ -325,7 +325,9 @@ details_head.classList.add("dh_style");
 const details_poster = document.createElement("img");
 
 details_poster.src = data.image?.medium ?? "";
+details_poster.classList.add("detpost_style")
 details_head.appendChild(details_poster);
+
 
 const tyc = document.createElement("div");
 tyc.classList.add("tyc_style");
