@@ -543,7 +543,7 @@ function updateFavButton(): void {
     fav.classList.toggle("fav_toggle", exists);
 
     fav.innerHTML = exists
-        ? `Added To Favourites <i class="fa-solid fa-bookmark"></i>`
+        ? `Added To <i class="fa-solid fa-bookmark"></i>`
         : `Add To Favourites <i class="fa-regular fa-bookmark"></i>`;
 }
 

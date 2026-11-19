@@ -1,2 +1,2 @@
-export declare function showDetails(id: number): void;
+export {};
 //# sourceMappingURL=filter.d.ts.map

@@ -151,7 +151,7 @@ function filterandSort() {
 genre_select.addEventListener("change", filterandSort);
 sort_select.addEventListener("change", filterandSort);
 type_select.addEventListener("change", filterandSort);
-export function showDetails(id) {
+function showDetails(id) {
     series.style.display = "none";
     gfs.style.display = "none";
     Promise.all([
@@ -165,6 +165,7 @@ export function showDetails(id) {
         details_head.classList.add("dh_style");
         const details_poster = document.createElement("img");
         details_poster.src = data.image?.medium ?? "";
+        details_poster.classList.add("detpost_style");
         details_head.appendChild(details_poster);
         const tyc = document.createElement("div");
         tyc.classList.add("tyc_style");
@@ -299,7 +300,7 @@ export function showDetails(id) {
             const exists = favourites.some(item => item.id === data.id);
             fav.classList.toggle("fav_toggle", exists);
             fav.innerHTML = exists
-                ? `Added To Favourites <i class="fa-solid fa-bookmark"></i>`
+                ? `Added To <i class="fa-solid fa-bookmark"></i>`
                 : `Add To Favourites <i class="fa-regular fa-bookmark"></i>`;
         }
         updateFavButton();
@@ -374,4 +375,5 @@ function goback() {
     series.style.display = "grid";
     gfs.style.display = "block";
 }
+export {};
 //# sourceMappingURL=filter.js.map

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +16,8 @@
 
 
 </head>
-<body >
-  <div class="discover_bg " >
+<body class="m-0 overflow-x-hidden" >
+  <div class="discover_bg max-w-100vw" >
    <div class="header">
 
    <header class="w-full max-w-[1000px] mx-auto">
@@ -37,10 +37,10 @@
     </header>
      </div>   
      
-      <div class="flex items-center justify-center ">
-        <div class="searchbar" >
-            <input type="text" placeholder="Type the series name" class="outline-none" id="search"  >
-          <span class="ml-19"><i class="fa-solid fa-magnifying-glass"></i></span> 
+      <div class="flex items-center justify-center px-4 ">
+        <div class="searchbar" id="searchBar" >
+            <input type="text" placeholder="Type the series name" class="outline-none w-full pr-3" id="search"  >
+          <span class="ml-19"><i class="fa-solid fa-magnifying-glass text-gray-200"></i></span> 
          
         </div>    
         </div>
@@ -53,9 +53,10 @@
         
 
     </div>
+    <div id="details" class="w-full max-w-[1200px] mx-auto pb-20"></div>
     </div>
 
-    <footer class="footer  w-full">
+    <footer class="footer w-full">
 
    <div class="flex justify-between">
      <div class="footer_top">

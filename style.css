@@ -12,14 +12,16 @@
 
 
 .searchbar{
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 20px;
-    padding: 7px;
-    padding-inline: 20px;
-    border:1px solid gray;
-    width: 400px;
+    padding: 7px 20px;
+    border: 1px solid gray;
+    width: 100%;
+    max-width: 400px;
     border-radius: 20px;
     margin-top: 20px;
-    
    
     
 }
@@ -453,6 +455,22 @@
     
 }
 
+@media (max-width:440px) {
+    .runtime_box_style{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    background-color: #161515d2;
+    padding: 5px;
+    gap: 5px;
+    border-radius: 15px;
+    top: 220px;
+    left: 23px;
+    scale: 0.9;
+    
+}
+}
+
 .runtime_style{
     color: white;
 }
@@ -513,12 +531,12 @@
         
     margin: 0;
         min-height: 100vh;
-
+        
         background-image: url("./assets/home.png");
         background-size: cover;
         background-position: center top;
         background-repeat: repeat-y;
-        
+        overflow-x: hidden;
     
     
         
@@ -585,7 +603,21 @@
 
 .maindiv_style{
     margin-top: 150px;
+    overflow-x: hidden;
 }
+
+.maindivd_style{
+    margin-top: 50px;
+}
+
+.maindivp_style{
+    margin-top: 50px;
+    background-color: #111111cb;
+    padding: 5px;
+    padding-block:50px ;
+    border-radius: 26px;
+}
+
 
 .mainactor{
        display: flex;
@@ -720,9 +752,27 @@
     .dets_style{
         margin-top: 65px;
     }
-    .ty_style{
-        margin-right: 6px;
+    .year_style{
+        padding-right: 30px;
+        padding-bottom: 30px;
     }
+    .detpost_style{
+        height: 300px;
+    }
+    .watch_style{
+        position: relative;
+        right: 220px;
+    }
+    .fav_style{
+        position: relative;
+        bottom: 65px;
+        right: 10px;
+    }
+    .detailssummary_style{
+       position: relative;
+       top: -35px;
+    }
+    
 }
 
 .drating_style{
@@ -991,6 +1041,7 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    min-width: 200px;
 }
 
 
@@ -1030,6 +1081,7 @@
     border-radius: 9px;
     margin-top: 20px;
     margin-right: 13px;
+    min-width: 200px;
     height: 45px;
     
 }
@@ -1165,16 +1217,3 @@
     font-size: 13px;
 }
 
-/* @media (max-width: 600px) {
-    .footer {
-        padding: 30px 6%;
-    }
-
-    .footer_links {
-        gap: 60px;
-    }
-<<<<<<< HEAD
-} */
-=======
-} */
->>>>>>> be1f557639f392e930ecb681dc3c34243d7b6f7b
